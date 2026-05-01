@@ -66,7 +66,7 @@ function Details() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4">
 
-        /* Back Button */
+        {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
           className="mb-4 px-5 py-2 bg-black/40 backdrop-blur-md rounded-xl text-white border border-white/20"
@@ -74,7 +74,7 @@ function Details() {
           ← Back
         </button>
 
-        /* College Card */
+        {/* College Card */}
         <div className="backdrop-blur-md bg-black/40 rounded-2xl border border-white/20 shadow-xl mb-6">
           <div className="p-6">
             <h1 className="text-3xl font-bold text-white">{college.name}</h1>
@@ -100,7 +100,7 @@ function Details() {
           </div>
         </div>
 
-        /* Courses */
+        {/* Courses */}
         <div className="backdrop-blur-md bg-black/40 rounded-2xl border border-white/20 p-6 mb-6">
           <h2 className="text-white text-xl mb-4">📚 Courses</h2>
 
@@ -115,11 +115,11 @@ function Details() {
           </div>
         </div>
 
-        /* Reviews */
+        {/* Reviews */}
         <div className="backdrop-blur-md bg-black/40 rounded-2xl border border-white/20 p-6">
           <h2 className="text-white text-xl mb-4">⭐ Reviews</h2>
 
-          /* Add Review */
+          {/* Add Review */}
           <div className="mb-5">
             <textarea
               value={newReview.comment}
@@ -136,7 +136,7 @@ function Details() {
             </button>
           </div>
 
-          /* Review List */
+          {/* Review List */}
           {reviews.map((r) => (
             <div key={r.id} className="mb-3 p-3 bg-black/40 rounded-xl border border-white/20">
               <p className="text-white font-bold">{r.user}</p>

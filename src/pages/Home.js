@@ -65,7 +65,7 @@ function Home() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      /* Hero Section */
+      {/* Hero Section */}
       <div 
         className="relative min-h-[550px] flex items-center"
         style={{
@@ -88,7 +88,7 @@ function Home() {
             </h1>
             <p className="text-gray-200 text-lg mb-8">Search for colleges, courses and more...</p>
 
-             /* Search Bar  */
+             {/* Search Bar  */}
             <form onSubmit={(e) => { e.preventDefault(); if (query.trim()) navigate('/results', { state: { query } }); }} className="max-w-2xl mx-auto mb-8">
               <div className="flex gap-2 backdrop-blur-md bg-white/20 rounded-full p-1 shadow-xl border border-white/30">
                 <input
@@ -138,7 +138,7 @@ function Home() {
         </div>
       </div>
 
-      /* Study Goal */
+      {/* Study Goal */}
       <div className="max-w-7xl mx-auto px-4 mt-8 pb-16">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-center mb-8">Select Your Study Goal</h2>
@@ -164,7 +164,7 @@ function Home() {
         </div>
       </div>
 
-      /* Features Section */
+      {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl p-6 text-center shadow hover:shadow-lg transition cursor-pointer">
@@ -185,7 +185,7 @@ function Home() {
         </div>
       </div>
 
- /* Top 10 Colleges Section  */
+ {/* Top 10 Colleges Section  */}
 <div className="max-w-7xl mx-auto px-4 pb-16">
   <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
     <div className="border-b border-gray-200 px-6 py-4">
@@ -208,7 +208,7 @@ function Home() {
         </thead>
         <tbody className="divide-y divide-gray-100">
           
-          /* Rank 1 */
+          {/* Rank 1 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'IIM Ahmedabad' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-yellow-500 text-white font-bold rounded-full inline-flex items-center justify-center">1</span></td>
             <td><div><p className="font-semibold">IIMA - IIM Ahmedabad</p><p className="text-xs text-gray-500">Ahmedabad, Gujarat</p></div></td>
@@ -219,7 +219,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹27.5 Lakhs</span></td>
            </tr>
 
-          /* Rank 2 */
+          {/* Rank 2 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'IIT Bombay' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">2</span></td>
             <td><div><p className="font-semibold">IIT Bombay</p><p className="text-xs text-gray-500">Mumbai, Maharashtra</p></div></td>
@@ -230,7 +230,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹8.82 Lakhs</span></td>
            </tr>
 
-          /* Rank 3 */
+          {/* Rank 3 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'AIIMS Delhi' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-amber-600 text-white font-bold rounded-full inline-flex items-center justify-center">3</span></td>
             <td><div><p className="font-semibold">AIIMS Delhi</p><p className="text-xs text-gray-500">New Delhi</p></div></td>
@@ -241,7 +241,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹39,095</span></td>
            </tr>
 
-          /* Rank 4 */
+          {/* Rank 4 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'NLSIU Bangalore' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">4</span></td>
             <td><div><p className="font-semibold">NLSIU Bangalore</p><p className="text-xs text-gray-500">Bangalore, Karnataka</p></div></td>
@@ -252,7 +252,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹15.56 Lakhs</span></td>
            </tr>
 
-          /* Rank 5 */
+          {/* Rank 5 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'VMMC Delhi' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">5</span></td>
             <td><div><p className="font-semibold">Vardhman Mahavir Medical College</p><p className="text-xs text-gray-500">New Delhi</p></div></td>
@@ -263,7 +263,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹2.65 Lakhs</span></td>
            </tr>
 
-          /* Rank 6 */
+          {/* Rank 6 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'IIT Delhi' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">6</span></td>
             <td><div><p className="font-semibold">IIT Delhi</p><p className="text-xs text-gray-500">New Delhi</p></div></td>
@@ -274,7 +274,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹8.62 Lakhs</span></td>
            </tr>
 
-          /* Rank 7 */
+          {/* Rank 7 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'IIT Kanpur' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">7</span></td>
             <td><div><p className="font-semibold">IIT Kanpur</p><p className="text-xs text-gray-500">Kanpur, Uttar Pradesh</p></div></td>
@@ -285,7 +285,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹8.5 Lakhs</span></td>
            </tr>
 
-          /* Rank 8 */
+          {/* Rank 8 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'BITS Pilani' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">8</span></td>
             <td><div><p className="font-semibold">BITS Pilani</p><p className="text-xs text-gray-500">Pilani, Rajasthan</p></div></td>
@@ -296,7 +296,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹19.2 Lakhs</span></td>
            </tr>
 
-          /* Rank 9 */
+          {/* Rank 9 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'NIT Trichy' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">9</span></td>
             <td><div><p className="font-semibold">NIT Trichy</p><p className="text-xs text-gray-500">Tiruchirappalli, Tamil Nadu</p></div></td>
@@ -307,7 +307,7 @@ function Home() {
             <td><span className="text-green-600 font-semibold">₹5.6 Lakhs</span></td>
            </tr>
 
-          /* Rank 10 */
+          {/* Rank 10 */}
           <tr className="hover:bg-gray-50 cursor-pointer" onClick={() => navigate('/results', { state: { query: 'IIIT Hyderabad' } })}>
             <td className="px-4 py-3"><span className="w-8 h-8 bg-gray-400 text-white font-bold rounded-full inline-flex items-center justify-center">10</span></td>
             <td><div><p className="font-semibold">IIIT Hyderabad</p><p className="text-xs text-gray-500">Hyderabad, Telangana</p></div></td>
@@ -321,7 +321,7 @@ function Home() {
       </table>
     </div>
     
-    /* View All Button */
+    {/* View All Button */}
     <div className="bg-gray-50 px-6 py-4 border-t text-center">
       <button onClick={() => navigate('/results', { state: { query: 'top colleges' } })} className="px-6 py-2 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg hover:scale-105 transition font-medium">
         View All 50+ Colleges →
@@ -332,7 +332,7 @@ function Home() {
 </div>
 
 
-  /* Top Study Places Section  */
+  {/* Top Study Places Section  */}
 <div className="max-w-7xl mx-auto px-4 pb-16">
   <div className="bg-white rounded-xl shadow-sm border border-gray-100">
     <div className="flex items-center gap-2 px-5 py-3 border-b border-gray-100">
@@ -365,7 +365,7 @@ function Home() {
 
 
 
-  /* Admission 2026 Section */
+  {/* Admission 2026 Section */}
 <div className="max-w-7xl mx-auto px-4 pb-16">
   <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
     <div className="border-b border-gray-200 px-6 py-4">
@@ -400,7 +400,7 @@ function Home() {
 </div>
 
       
-  /* Latest News & Stories Section */
+  {/* Latest News & Stories Section */}
 <div className="max-w-7xl mx-auto px-4 pb-16">
   <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
     <div className="border-b border-gray-200 px-6 py-4">
@@ -415,7 +415,7 @@ function Home() {
             <span className="text-orange-500">📢</span> Exam Alerts
           </h3>
           <div className="space-y-4">
-            /* News 1 */
+            {/* News 1 */}
             <div className="border-b border-gray-100 pb-4">
               <h4 className="font-semibold text-gray-800 text-sm hover:text-blue-600 cursor-pointer">
                 NTA Issues Guidelines for NEET UG 2026 Exam; Check...
@@ -429,7 +429,7 @@ function Home() {
               </button>
             </div>
             
-            /* News 2 */
+            {/* News 2 */}
             <div className="border-b border-gray-100 pb-4">
               <h4 className="font-semibold text-gray-800 text-sm hover:text-blue-600 cursor-pointer">
                 MH Law CET 3 Year LLB 2026 Answer Key Out; Raise...
@@ -443,7 +443,7 @@ function Home() {
               </button>
             </div>
             
-            /* News 3 */
+            {/* News 3 */}
             <div className="border-b border-gray-100 pb-4">
               <h4 className="font-semibold text-gray-800 text-sm hover:text-blue-600 cursor-pointer">
                 VITEEE 2026 May 1 Shift 1 Question Paper: Download...
@@ -459,13 +459,13 @@ function Home() {
           </div>
         </div>
 
-        /* College & Admission Alerts */
+        {/* College & Admission Alerts */}
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
             <span className="text-green-500">🏛️</span> College & Admission Alerts
           </h3>
           <div className="space-y-4">
-            /* Alert 1 */
+            {/* Alert 1 */}
             <div className="border-b border-gray-100 pb-4">
               <h4 className="font-semibold text-gray-800 text-sm hover:text-blue-600 cursor-pointer">
                 CBSE Class 12 Board Exam 2026 Schedule Released
@@ -479,7 +479,7 @@ function Home() {
               </button>
             </div>
             
-            /* Alert 2 */
+            {/* Alert 2 */}
             <div className="border-b border-gray-100 pb-4">
               <h4 className="font-semibold text-gray-800 text-sm hover:text-blue-600 cursor-pointer">
                 JEE Main 2026 April Session Results Expected Soon
@@ -493,7 +493,7 @@ function Home() {
               </button>
             </div>
             
-            /* Alert 3 */
+            {/* Alert 3 */}
             <div className="border-b border-gray-100 pb-4">
               <h4 className="font-semibold text-gray-800 text-sm hover:text-blue-600 cursor-pointer">
                 NEET UG 2026 Application Form Correction Window Open
@@ -510,7 +510,7 @@ function Home() {
         </div>
       </div>
       
-      /* View All Button */
+      {/* View All Button */}
       <div className="text-center mt-6 pt-4 border-t border-gray-100">
         <button className="text-blue-600 text-sm font-medium hover:text-blue-700">
           View All News & Updates →
@@ -521,7 +521,7 @@ function Home() {
 </div>
 
      
-  /* Top Courses Section */
+  {/* Top Courses Section */}
 <div className="max-w-7xl mx-auto px-4 pb-16">
   <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
     <div className="border-b border-gray-200 px-6 py-4">
@@ -551,7 +551,7 @@ function Home() {
 
 
 
-/* Subscribe To Our Newsletter  */
+{/* Subscribe To Our Newsletter  */}
 <div className="max-w-7xl mx-auto px-4 pb-16">
   <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
     <div className="p-6">
@@ -594,17 +594,17 @@ function Home() {
         
 
 
-          /* footer section */
-          <footer className="bg-gray-900 text-white mt-16">
-          <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* footer section */}
+        <footer className="bg-gray-900 text-white mt-16">
+        <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
       
-      /* Column 1 */
+      {/* Column 1 */}
       <div>
         <div className="flex items-center gap-2 mb-4">
           <div className="text-2xl">🎓</div>
           <div>
-            <h3 className="font-bold text-lg">Campusly</h3>
+            <h3 className="font-bold text-lg">CampusConnect</h3>
             <p className="text-xs text-gray-400">Your Education Partner</p>
           </div>
         </div>
@@ -613,7 +613,7 @@ function Home() {
         </p>
       </div>
 
-      /* Column 2 - Why Choose Us */
+      {/* Column 2 - Why Choose Us */}
       <div>
         <h3 className="font-semibold text-lg mb-4">✨ Why Choose Us?</h3>
         <div className="space-y-2">
@@ -626,7 +626,7 @@ function Home() {
        
       </div>
 
-      /* Column 3 - Quick Links */
+      {/* Column 3 - Quick Links */}
       <div>
         <h3 className="font-semibold text-lg mb-4">🔗 Quick Links</h3>
         <ul className="space-y-2 text-gray-400 text-sm">
@@ -638,7 +638,7 @@ function Home() {
         </ul>
       </div>
 
-      /* Column 4 - Contact */
+      {/* Column 4 - Contact */}
       <div>
         
         <h3 className="font-semibold text-lg mb-2 mt-4">📞 Get in Touch</h3>
@@ -650,9 +650,9 @@ function Home() {
       </div>
     </div>
 
-    /* Bottom Bar */
+    {/* Bottom Bar */}
     <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-xs">
-      <p>© 2024 Campusly. All rights reserved. | Designed with ❤️ for students</p>
+      <p>© 2024 CampusConnect. All rights reserved. | Designed with ❤️ for students</p>
       <p className="mt-1">📍 India | 🌍 Global Presence</p>
     </div>
   </div>

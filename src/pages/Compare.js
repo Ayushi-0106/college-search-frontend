@@ -67,13 +67,13 @@ function Compare() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         
-        /* Header */
+        {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-white">Compare Colleges</h1>
           <p className="text-white/70 mt-2">Compare up to 3 colleges side by side</p>
         </div>
 
-        /* Search Box */
+        {/* Search Box */}
         <div className="backdrop-blur-md bg-white/10 rounded-2xl p-5 mb-6 border border-white/20 shadow-xl">
           <div className="relative">
             <input
@@ -103,7 +103,7 @@ function Compare() {
           )}
         </div>
 
-        /* Comparison Table */
+        {/* Comparison Table */}
         {selectedColleges.length === 0 ? (
           <div className="backdrop-blur-md bg-white/10 rounded-2xl p-12 text-center border border-white/20">
             <div className="text-6xl mb-4">🔍</div>
@@ -178,7 +178,7 @@ function Compare() {
           </div>
         )}
 
-        /* Tips */
+        {/* Tips */}
         {selectedColleges.length > 0 && selectedColleges.length < 3 && (
           <div className="mt-6 text-center text-white/50 text-sm">
             💡 Add {3 - selectedColleges.length} more college(s) for better comparison

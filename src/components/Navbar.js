@@ -37,7 +37,7 @@ function Navbar() {
               🎓
             </div>
             <div>
-              <h2 className="font-bold text-white text-base">Campusly</h2>
+              <h2 className="font-bold text-white text-base">CampusConnect</h2>
               <p className="text-xs text-white/80">Your Education Partner</p>
             </div>
           </div>
