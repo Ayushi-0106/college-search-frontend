@@ -27,10 +27,10 @@ function Login() {
         backgroundAttachment: "fixed"
       }}
     >
-      {/* Dark overlay – taaki form aur text clear dikhe */}
+      
       <div className="absolute inset-0 bg-black/50"></div>
       
-      {/* Glassmorphism Login Card */}
+      {/*  Login Card */}
       <div className="relative z-10 backdrop-blur-md bg-white/10 rounded-2xl shadow-2xl w-full max-w-md overflow-hidden border border-white/20">
         
         {/* Header */}

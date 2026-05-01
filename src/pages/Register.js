@@ -37,20 +37,19 @@ function Register() {
         backgroundAttachment: "fixed"
       }}
     >
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
       
-      {/* Glassmorphism Register Card - SIZE CHOTA KIYA */}
+      {/* Register Card */}
       <div className="relative z-10 backdrop-blur-md bg-white/10 rounded-xl shadow-2xl w-full max-w-sm overflow-hidden border border-white/20">
         
-        {/* Header - PADDING KAM */}
+        {/* Header  */}
         <div className="text-center py-4 px-4">
           <div className="text-4xl mb-1">🚀</div>
           <h2 className="text-xl font-bold text-white">Create Account</h2>
           <p className="text-xs text-gray-200">Join us today</p>
         </div>
         
-        {/* Form - PADDING KAM */}
+        {/* Form */}
         <form onSubmit={handleRegister} className="px-5 pb-5">
           {/* Full Name */}
           <div className="mb-3">

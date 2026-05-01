@@ -73,7 +73,7 @@ function Results() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         
-        {/* Header - Soft Glass */}
+        {/* Header */}
         <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 mb-6 border border-white/20 shadow-xl">
           <h1 className="text-2xl font-bold text-white">
             {colleges.length} Colleges Found {query && `for "${query}"`}
@@ -81,7 +81,7 @@ function Results() {
           <p className="text-white/70 text-sm mt-1">Find the best colleges matching your criteria</p>
         </div>
 
-        {/* Filters - Soft Glass */}
+        {/* Filters */}
         <div className="backdrop-blur-md bg-white/10 rounded-2xl p-5 mb-6 border border-white/20 shadow-xl">
           <h3 className="text-white/90 font-semibold mb-3 text-lg">🔍 Filters</h3>
           <div className="flex flex-wrap gap-3">
@@ -143,7 +143,7 @@ function Results() {
                 className="backdrop-blur-md bg-white/10 rounded-2xl overflow-hidden border border-white/20 hover:bg-white/20 transition-all hover:-translate-y-1 cursor-pointer shadow-xl"
                 onClick={() => navigate(`/details/${college.id}`, { state: { college } })}
               >
-                {/* Card Header - Soft Gradient (No Blue) */}
+                {/* Card Header*/}
                 <div className="h-32 bg-gradient-to-r from-white/20 to-white/5 flex items-center justify-center text-5xl backdrop-blur-sm">
                   🏛️
                 </div>

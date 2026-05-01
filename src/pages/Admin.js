@@ -50,12 +50,11 @@ function Admin() {
         backgroundAttachment: "fixed"
       }}
     >
-      {/* Dark Overlay for better contrast */}
+
       <div className="absolute inset-0 bg-black/40 fixed"></div>
-      
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         
-        {/* Admin Header - Glassmorphism */}
+        /* Admin Header */
         <div className="backdrop-blur-md bg-white/15 rounded-2xl p-6 mb-8 border border-white/30 shadow-xl">
           <div className="flex justify-between items-center flex-wrap gap-4">
             <div>
@@ -71,7 +70,7 @@ function Admin() {
           </div>
         </div>
 
-        {/* Stats Cards - Glassmorphism */}
+        /* Stats Cards */
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
           {stats.map((stat, i) => (
             <div key={i} className="backdrop-blur-md bg-white/15 rounded-2xl p-5 border border-white/30 hover:bg-white/25 transition shadow-xl">
@@ -88,7 +87,7 @@ function Admin() {
           ))}
         </div>
 
-        {/* Tabs - Glassmorphism */}
+        
         <div className="flex gap-2 mb-6">
           <button
             onClick={() => setActiveTab('pending')}
@@ -112,7 +111,7 @@ function Admin() {
           </button>
         </div>
 
-        {/* Pending Institutions Tab - Glassmorphism Table */}
+        /* Pending Institutions */
         {activeTab === 'pending' && (
           <div className="backdrop-blur-md bg-white/15 rounded-2xl overflow-hidden border border-white/30 shadow-xl">
             <div className="overflow-x-auto">
@@ -173,7 +172,7 @@ function Admin() {
           </div>
         )}
 
-        {/* Manage Users Tab - Glassmorphism Table */}
+        /* Manage Users Tab  */
         {activeTab === 'users' && (
           <div className="backdrop-blur-md bg-white/15 rounded-2xl overflow-hidden border border-white/30 shadow-xl">
             <div className="overflow-x-auto">
